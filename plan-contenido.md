@@ -18,7 +18,7 @@ Rotar pilares para no repetir. Marcar con ✅ + fecha + enlace cuando se publiqu
 | 3 | Experiencias | Tour privado: las 5 paradas del día | Carrusel | |
 | 4 | Guía | Dónde comer en Guatapé (restaurantes de la guía, 10% OFF) | Carrusel | |
 | 5 | FAQ | ¿Cuánto se tarda del aeropuerto a Guatapé? ¿Y con equipaje? | Imagen | ⚠️ falta dato de duración |
-| 6 | Confianza | Reseña real de un cliente | Imagen | ⚠️ falta reseña en `resenas.md` |
+| 6 | Confianza | Reseña real de un cliente (hay 5 en `resenas.md`) | Imagen | |
 | 7 | Guía | Qué significan los zócalos de Guatapé | Carrusel | |
 | 8 | Experiencias | San Rafael: naturaleza y tranquilidad | Imagen | |
 | 9 | Servicio | Traslado privado vs bus: comparación | Carrusel | |

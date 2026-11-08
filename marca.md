@@ -6,7 +6,9 @@ Fuente de verdad para crear posts. Si un dato no está aquí o en la web, NO inv
 - Empresa familiar de transporte privado desde 2019. Medellín ⇄ Guatapé ⇄ Aeropuerto José María Córdova (MDE).
 - Todos los servicios en camioneta SUV. Conductores bilingües (español/inglés) que comparten historias y tips locales.
 - Incluido: snacks e hidratación, seguro de viaje. Atención 24/7. Recogidas puntuales. Tarifas justas y transparentes.
-- Reseñas: Google y Tripadvisor (usar solo reseñas reales copiadas en `resenas.md`).
+- Reseñas: Google 5.0 ⭐ con 67 opiniones (nov 2026); Tripadvisor pendiente. Usar solo reseñas reales copiadas en `resenas.md`.
+- Conductores mencionados en reseñas: Jonathan, Esteban, Alvi (confirmar con el dueño antes de presentarlos en un post).
+- Detalles reales de reseñas: SUV con cofre/maletero de techo para el equipaje, pequeñas paradas a petición (Alto del Chocho con llamas, finca de arándanos), equipo de oficina muy comunicativo.
 
 ## Servicios y precios (web, nov 2026)
 | Servicio | Precio |
