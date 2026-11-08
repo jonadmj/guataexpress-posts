@@ -25,3 +25,9 @@ Instrucciones para las sesiones programadas de Claude. Leer también `marca.md`,
 3. Revisar comentarios: `python3 scripts/comentarios.py pendientes`. Para cada comentario sin respuesta, proponer una respuesta (tono de `marca.md`, en el idioma del comentario; si preguntan precio/reserva → invitar a WhatsApp +57 321 729 3431; no inventar datos). Quejas o temas delicados: no proponer respuesta automática, solo avisar.
 4. Notificar al dueño en un solo mensaje: enlace del post publicado (o aviso si no había post aprobado) + lista de comentarios pendientes con la respuesta propuesta. Pedir "ok" (o cambios) en esta sesión.
 5. SOLO tras el "ok" del dueño: `python3 scripts/comentarios.py responder COMMENT_ID "texto"` para cada respuesta aprobada. Nunca responder sin aprobación.
+
+## Día 1 de cada mes — informe mensual
+1. `python3 scripts/estadisticas.py` (mes anterior) → guarda `informes/AAAA-MM.json`. Comparar con el JSON del mes anterior si existe.
+2. Escribir `informes/AAAA-MM.md` en español, corto y claro: seguidores, alcance, visitas al perfil, clics a la web, interacciones (con variación vs. mes anterior), top posts del mes y por qué funcionaron, y 2–3 recomendaciones concretas para el mes siguiente (temas, formatos, horarios). Actualizar `plan-contenido.md` si una recomendación lo pide.
+3. Commit + push. Terminar con un resumen breve al dueño (5–8 líneas) y el enlace al informe en GitHub.
+- Referencia: el reel del 2026-08-05 alcanzó 193 cuentas (230 reproducciones), frente a 5–8 cuentas/mes en meses sin publicaciones. Los reels pueden alcanzar mucho más que las imágenes.
