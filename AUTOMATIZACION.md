@@ -12,6 +12,7 @@ Instrucciones para las sesiones programadas de Claude. Leer también `marca.md`,
 - Commits: user Claude <noreply@anthropic.com>. Siempre hacer push al terminar.
 
 ## Domingo — preparar la semana
+0. Si `cola.json` ya tiene posts con fecha de lunes, miércoles o viernes de la semana siguiente (estado borrador o aprobado), NO preparar otros: solo recordar al dueño los que falten por aprobar y terminar.
 1. Elegir 3 ideas (lunes, miércoles, viernes de la semana siguiente), mezclando pilares y formatos.
 2. Diseñar en HTML (ver `plantillas/`) y renderizar con Playwright a JPG en `semanas/AAAA-MM-DD/` (fecha del lunes).
 3. Añadir cada post a `cola.json` con `estado: "borrador"`, `fecha`, `imagenes`, `caption`, `ubicacion_id` (si aplica) y `primer_comentario` (opcional).
