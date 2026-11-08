@@ -5,7 +5,7 @@ Al publicar: nombre como aparece (o inicial + apellido abreviado), fuente y estr
 
 ## Resumen
 - **Google:** 5.0 ⭐ · 67 opiniones (a 2026-11-08)
-- **Tripadvisor:** 5 reseñas de 5 ⭐ copiadas (nota global pendiente)
+- **Tripadvisor:** 5.0 ⭐ · 27 opiniones · N.º 2 de 24 en Transporte en Guatapé (a 2026-11-08). 5 reseñas copiadas abajo.
 
 ## Google
 
@@ -43,7 +43,7 @@ Frases destacadas: "Very reasonable prices compared to other companies." · "Rel
 Frases destacadas: "He arrived early." · "Made us feel completely at ease from pickup to drop-off."
 
 ## Tripadvisor
-(Nota global y número de opiniones: pendiente de captura.)
+Ficha: "TRANSPORT TO AIRPORT - MEDELLIN - GUATAPE" — 5,0 · 27 opiniones · N.º 2 de 24 Transporte en Guatapé (2026-11-08).
 
 ### Lina Rivera — ⭐⭐⭐⭐⭐ — sept 2026 · Parejas
 **"GuataExpress is your only option!"**
