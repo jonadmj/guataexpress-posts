@@ -12,3 +12,4 @@
 | san-rafael-caminata-montana.jpg | San Rafael: caminata por pradera verde con montañas | Propia (GuataExpress) | Pequeñas | ✅ Sí |
 | san-rafael-cascada-poza.jpg | San Rafael: cascada con poza verde esmeralda | Propia (GuataExpress) | Pequeñas, lejos | ✅ Sí |
 | casa-al-reves-clientes.jpg | Tres clientes frente a la Casa al Revés (@atypical_housecol en la fachada) | Propia (GuataExpress) | Sí, de frente (permiso dado) | ✅ Sí · etiquetar @atypical_housecol |
+| grupo-grande-penol.jpg | Grupo grande (~35 personas) frente a la Piedra del Peñol, cielo nublado | Propia (GuataExpress), ya publicada en su ficha de Tripadvisor | Sí, muchas caras de frente | ⚠️ Confirmar permiso del grupo · ojo: es un grupo grande, no insinuar que viajaron en SUV |
