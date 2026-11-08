@@ -1,0 +1,21 @@
+{
+  "nota": "Estados: borrador → aprobado (por el dueño) → publicado. Solo se publica lo 'aprobado'. Imágenes: rutas dentro del repo, JPG 1080x1350.",
+  "posts": [
+    {
+      "id": "2026-11-08-traslados",
+      "fecha": "2026-11-08",
+      "estado": "publicado",
+      "imagenes": [
+        "2026-11-carrusel-traslados/guataexpress-carrusel-1.jpg",
+        "2026-11-carrusel-traslados/guataexpress-carrusel-2.jpg",
+        "2026-11-carrusel-traslados/guataexpress-carrusel-3.jpg",
+        "2026-11-carrusel-traslados/guataexpress-carrusel-4.jpg",
+        "2026-11-carrusel-traslados/guataexpress-carrusel-5.jpg"
+      ],
+      "caption": "(ver post)",
+      "ubicacion_id": "113090228704415",
+      "media_id": "18044418062838175",
+      "enlace": "https://www.instagram.com/p/Dfd3lI6F1SJ/"
+    }
+  ]
+}
