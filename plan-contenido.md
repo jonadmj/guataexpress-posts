@@ -14,13 +14,13 @@ Rotar pilares para no repetir. Marcar con ✅ + fecha + enlace cuando se publiqu
 | # | Pilar | Idea | Formato | Estado |
 |---|---|---|---|---|
 | 1 | Servicio | Aeropuerto MDE ⇄ Guatapé sin estrés | Carrusel | ✅ 2026-11-08 https://www.instagram.com/p/Dfd3lI6F1SJ/ |
-| 2 | Guía | 5 tips para subir la Piedra del Peñol (740 escalones, ir 7–9 AM…) | Carrusel | |
+| 2 | Guía | 5 tips para subir la Piedra del Peñol (740 escalones, ir 7–9 AM…) | Carrusel | 🗓️ programado 2026-11-13 |
 | 3 | Experiencias | Tour privado: las 5 paradas del día | Carrusel | |
 | 4 | Guía | Dónde comer en Guatapé (restaurantes de la guía, 10% OFF) | Carrusel | |
 | 5 | FAQ | ¿Cuánto se tarda del aeropuerto a Guatapé? ¿Y con equipaje? | Imagen | ⚠️ falta dato de duración |
-| 6 | Confianza | Reseña real de un cliente (hay 5 en `resenas.md`) | Imagen | |
+| 6 | Confianza | Reseñas reales: 5.0 en 94 opiniones | Carrusel | 🗓️ programado 2026-11-09 |
 | 7 | Guía | Qué significan los zócalos de Guatapé | Carrusel | |
-| 8 | Experiencias | San Rafael: naturaleza y tranquilidad | Imagen | |
+| 8 | Experiencias | San Rafael: naturaleza y tranquilidad | Carrusel | 🗓️ programado 2026-11-11 |
 | 9 | Servicio | Traslado privado vs bus: comparación | Carrusel | |
 | 10 | Guía | Plan perfecto de 1 día en Guatapé | Carrusel | |
 | 11 | Confianza | Conoce a nuestros conductores | Carrusel | ⚠️ faltan fotos/nombres |
