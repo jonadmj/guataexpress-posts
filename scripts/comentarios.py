@@ -9,6 +9,7 @@ import json, sys, urllib.parse, urllib.request
 G = "https://graph.facebook.com/v21.0"
 IG = "17841454983723996"
 YO = "guataexpress"
+IGNORADOS = __import__("pathlib").Path(__file__).resolve().parent.parent / "comentarios_ignorados.json"
 
 def api(path, data=None):
     body = urllib.parse.urlencode(data).encode() if data is not None else None
@@ -20,12 +21,13 @@ def api(path, data=None):
 
 def pendientes(n=15):
     media = api(f"{IG}/media?fields=id,caption,permalink,comments_count,timestamp&limit={n}")["data"]
+    ign = set(json.loads(IGNORADOS.read_text())["ids"]) if IGNORADOS.exists() else set()
     out = []
     for m in media:
         if not m.get("comments_count"): continue
         cs = api(f"{m['id']}/comments?fields=id,text,username,timestamp,replies%7Busername%7D&limit=50")["data"]
         for c in cs:
-            if c.get("username") == YO: continue
+            if c.get("username") == YO or c["id"] in ign: continue
             if any(r.get("username") == YO for r in c.get("replies", {}).get("data", [])): continue
             out.append({"comment_id": c["id"], "usuario": c.get("username"), "texto": c.get("text"),
                         "fecha": c.get("timestamp"), "post": m.get("permalink"),
