@@ -22,4 +22,6 @@ Instrucciones para las sesiones programadas de Claude. Leer también `marca.md`,
 ## Lunes/miércoles/viernes — publicar
 1. `python3 scripts/publicar.py` (publica lo `aprobado` con fecha de hoy, hora Colombia).
 2. Push de `cola.json` actualizado y marcar ✅ en `plan-contenido.md`.
-3. Notificar al dueño con el enlace. Si había un post de hoy sin aprobar, avisarle (no publicar).
+3. Revisar comentarios: `python3 scripts/comentarios.py pendientes`. Para cada comentario sin respuesta, proponer una respuesta (tono de `marca.md`, en el idioma del comentario; si preguntan precio/reserva → invitar a WhatsApp +57 321 729 3431; no inventar datos). Quejas o temas delicados: no proponer respuesta automática, solo avisar.
+4. Notificar al dueño en un solo mensaje: enlace del post publicado (o aviso si no había post aprobado) + lista de comentarios pendientes con la respuesta propuesta. Pedir "ok" (o cambios) en esta sesión.
+5. SOLO tras el "ok" del dueño: `python3 scripts/comentarios.py responder COMMENT_ID "texto"` para cada respuesta aprobada. Nunca responder sin aprobación.
