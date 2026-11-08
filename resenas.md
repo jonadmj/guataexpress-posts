@@ -5,7 +5,7 @@ Al publicar: nombre como aparece (o inicial + apellido abreviado), fuente y estr
 
 ## Resumen
 - **Google:** 5.0 ⭐ · 67 opiniones (a 2026-11-08)
-- **Tripadvisor:** pendiente
+- **Tripadvisor:** 5 reseñas de 5 ⭐ copiadas (nota global pendiente)
 
 ## Google
 
@@ -43,4 +43,44 @@ Frases destacadas: "Very reasonable prices compared to other companies." · "Rel
 Frases destacadas: "He arrived early." · "Made us feel completely at ease from pickup to drop-off."
 
 ## Tripadvisor
-(pendiente)
+(Nota global y número de opiniones: pendiente de captura.)
+
+### Lina Rivera — ⭐⭐⭐⭐⭐ — sept 2026 · Parejas
+**"GuataExpress is your only option!"**
+> We had an absolutely amazing experience with GuataExpress! From the moment I made the reservation to the day of our service, Esteban provided exceptional customer service.
+>
+> I hired GuataExpress to pick us up from our hotel in Guatapé, take us to Medellín to run a few errands, and then take us to the airport. Esteban managed our time perfectly and went above and beyond to make sure we accomplished everything we needed to do while still getting to the airport on time and without any stress.
+>
+> The vehicle was absolutely immaculate, comfortable, and very well equipped. They even provided snacks and bottled water for us throughout the trip, which was such a thoughtful touch.
+>
+> Esteban was extremely courteous, professional, knowledgeable, and informative. His attention to detail and level of service truly exceeded our expectations.
+>
+> If you are looking for transportation, airport transfers, or tours in Medellín or Guatapé, look no further than GuataExpress! I will definitely be using them every time we visit Guatapé.
+>
+> They also offer several different tours that I can't wait to try on a future trip. Thank you, Esteban and GuataExpress, for making our day so easy and enjoyable. 100% recommended!
+
+Frases destacadas: "GuataExpress is your only option!" · "The vehicle was absolutely immaculate, comfortable, and very well equipped."
+
+### Britta N — ⭐⭐⭐⭐⭐ — ago 2026 (escrita el 20 de agosto de 2026)
+**"Guatapé transfer to"**
+> We had a great experience with Guataexpress. Their drivers were punctual, reliable and friendly. We felt safe and enjoyed our ride to and from Guatapé.
+
+### 2RoamingGnomies (Ontario's Highlands, Canadá) — ⭐⭐⭐⭐⭐ — jul 2026 · Parejas (escrita el 20 de julio de 2026)
+**"Excellent experience - we'll book again"**
+> We had an excellent experience with Guatapé Express. Esteban was punctual, professional, and a pleasure to travel with on both our transfer from Medellín Airport to Guatapé and the return trip. His vehicle was spotless, comfortable, and the drive felt safe and relaxed throughout. Communication was excellent, and he was friendly, knowledgeable, and happy to share local recommendations along the way. We wouldn't hesitate to use Guatapé Express again and highly recommend to anyone looking for reliable, high-quality transportation in the area.
+
+Frases destacadas: "Excellent experience - we'll book again" · "The drive felt safe and relaxed throughout."
+
+### Gabriel Siman (Ciudad de Panamá, Panamá) — ⭐⭐⭐⭐⭐ — may 2026 · Parejas (escrita el 22 de mayo de 2026)
+**"Opción segura, empresa familiar y puntual para ir del aeropuerto de Medellín a Guatape y regreso"**
+> Puntualidad, amabilidad y seguridad
+
+(Incluye 3 fotos del cliente — no usar sin permiso.)
+
+### Daniel P — ⭐⭐⭐⭐⭐ — abr 2026 · Parejas
+**"Mejor servicio de transporte personal"** (traducción automática de Tripadvisor; original en inglés no capturado)
+> Increíble Viaje a Guatape desde El Poblado.
+>
+> Esteban es el mejor y extremadamente servicial. Usaré Guataexpress cada vez que avance.
+
+(Incluye 5 fotos del cliente — no usar sin permiso. Si se cita, pedir el texto original en inglés.)
