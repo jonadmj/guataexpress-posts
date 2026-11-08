@@ -26,7 +26,8 @@ Tour privado: recogida en hotel/Airbnb, horario flexible. Paradas: Alto del Choc
 ## Estilo visual
 - Colores: azul marino #1e3a5f, naranja #e4844a, verde WhatsApp #25D366, gris claro #f7f7f7. Acento verde azulado #2b7a69.
 - Tipografía: Inter Tight / Inter Display, títulos muy gruesos.
-- Logo: insignia circular naranja con camioneta (pedir versión en alta resolución).
+- Logo: insignia circular (borde azul marino, franjas naranjas tipo atardecer, camioneta turquesa, banda roja "GUATAEXPRESS · TOURIST TRANSPORT · SINCE 2019"). Archivos: `logo/logo-circular.png` (fondo transparente, usar este) y `logo/logo-original.png`.
+- Eslogan del logo: "Safest and fastest way to travel".
 - Formato: 1080×1350 (vertical 4:5), JPG.
 
 ## Tono
