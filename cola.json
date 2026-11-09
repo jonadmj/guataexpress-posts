@@ -20,7 +20,7 @@
     {
       "id": "2026-11-09-resenas",
       "fecha": "2026-11-09",
-      "estado": "aprobado",
+      "estado": "publicado",
       "imagenes": [
         "semanas/2026-11-09/lunes-resenas-1.jpg",
         "semanas/2026-11-09/lunes-resenas-2.jpg",
@@ -28,7 +28,10 @@
         "semanas/2026-11-09/lunes-resenas-4.jpg"
       ],
       "caption": "✈️ 94 viajeros. 94 opiniones. 5.0 ⭐\n\nEstos son algunos de los \"pases de abordar\" que nos dejaron nuestros pasajeros en Google y Tripadvisor. Gracias por confiar en nosotros 🙌\n\n🇺🇸 94 travelers, 94 reviews, a perfect 5.0 on Google and Tripadvisor. Thank you for riding with us!\n\n🎟️ ¿Listo para tu pase? Reserva por WhatsApp: +57 321 729 3431 · 24/7\n🌐 www.guataexpress.com\n\n#Guatapé #Medellín #ElPeñol #Colombia #TransportePrivado #AeropuertoMDE #MedellinTravel #AirportTransfer",
-      "ubicacion_id": "113090228704415"
+      "ubicacion_id": "113090228704415",
+      "media_id": "18104717408548606",
+      "enlace": "https://www.instagram.com/p/DfhfK2amuwg/",
+      "publicado_en": "2026-11-09T08:55-05:00"
     },
     {
       "id": "2026-11-11-san-rafael",
