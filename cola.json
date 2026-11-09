@@ -20,7 +20,7 @@
     {
       "id": "2026-11-09-resenas",
       "fecha": "2026-11-09",
-      "estado": "borrador",
+      "estado": "aprobado",
       "imagenes": [
         "semanas/2026-11-09/lunes-resenas-1.jpg",
         "semanas/2026-11-09/lunes-resenas-2.jpg",
@@ -33,7 +33,7 @@
     {
       "id": "2026-11-11-san-rafael",
       "fecha": "2026-11-11",
-      "estado": "borrador",
+      "estado": "aprobado",
       "imagenes": [
         "semanas/2026-11-09/miercoles-san-rafael-1.jpg",
         "semanas/2026-11-09/miercoles-san-rafael-2.jpg",
@@ -46,7 +46,7 @@
     {
       "id": "2026-11-13-tips-penol",
       "fecha": "2026-11-13",
-      "estado": "borrador",
+      "estado": "aprobado",
       "imagenes": [
         "semanas/2026-11-09/viernes-tips-penol-1.jpg",
         "semanas/2026-11-09/viernes-tips-penol-2.jpg",
