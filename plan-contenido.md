@@ -14,7 +14,7 @@ Rotar pilares para no repetir. Marcar con ✅ + fecha + enlace cuando se publiqu
 | # | Pilar | Idea | Formato | Estado |
 |---|---|---|---|---|
 | 1 | Servicio | Aeropuerto MDE ⇄ Guatapé sin estrés | Carrusel | ✅ 2026-11-08 https://www.instagram.com/p/Dfd3lI6F1SJ/ |
-| 2 | Guía | 5 tips para subir la Piedra del Peñol (740 escalones, ir 7–9 AM…) | Carrusel | 🗓️ programado 2026-11-13 |
+| 2 | Guía | Tips para subir la Piedra del Peñol (+700 escalones, a primera hora…) | Carrusel | ✅ 2026-11-13 https://www.instagram.com/p/Dfr7_NwFP_J/ |
 | 3 | Experiencias | Tour privado: las 5 paradas del día | Carrusel | |
 | 4 | Guía | Dónde comer en Guatapé (restaurantes de la guía, 10% OFF) | Carrusel | |
 | 5 | FAQ | ¿Cuánto se tarda del aeropuerto a Guatapé? ¿Y con equipaje? | Imagen | ⚠️ falta dato de duración |
