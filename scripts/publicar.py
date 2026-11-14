@@ -29,8 +29,9 @@ def api(path, data=None, fatal=True):
 def publicar_facebook(post):
     """Publica el post en la página de Facebook. Devuelve (post_id, enlace) o lanza ApiError."""
     pt = api(f"{PAGE}?fields=access_token", fatal=False)["access_token"]  # token de página, solo en memoria
+    imgs = post.get("imagenes_facebook") or post["imagenes"]  # versión sin "Desliza →" si existe
     fotos = [api(f"{PAGE}/photos", {"url": RAW + p, "published": "false", "access_token": pt}, fatal=False)["id"]
-             for p in post["imagenes"]]
+             for p in imgs]
     d = {"message": post["caption"], "access_token": pt}
     for k, i in enumerate(fotos): d[f"attached_media[{k}]"] = json.dumps({"media_fbid": i})
     if post.get("ubicacion_id"):
@@ -88,7 +89,8 @@ def main():
         if p["estado"] != "aprobado":
             print(f"[{p['id']}] estado={p['estado']} → NO se publica"); continue
         if p.get("solo_facebook"):  # post ya publicado en Instagram que solo se sube a Facebook
-            check_urls(p["imagenes"]); print(f"[{p['id']}] solo Facebook, {len(p['imagenes'])} imagen(es)")
+            fbimgs = p.get("imagenes_facebook") or p["imagenes"]
+            check_urls(fbimgs); print(f"[{p['id']}] solo Facebook, {len(fbimgs)} imagen(es)")
             if a.dry_run: print("  dry-run: imágenes accesibles, no se crea nada"); continue
             try:
                 p["facebook_id"], p["enlace_facebook"] = publicar_facebook(p); p["estado"] = "publicado"

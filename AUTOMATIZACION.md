@@ -16,6 +16,7 @@ Instrucciones para las sesiones programadas de Claude. Leer también `marca.md`,
 1. Elegir 3 ideas (lunes, miércoles, viernes de la semana siguiente), mezclando pilares y formatos.
 2. Diseñar en HTML (ver `plantillas/`) y renderizar con Playwright a JPG en `semanas/AAAA-MM-DD/` (fecha del lunes).
 3. Añadir cada post a `cola.json` con `estado: "borrador"`, `fecha`, `imagenes`, `caption`, `ubicacion_id` (si aplica) y `primer_comentario` (opcional).
+3b. Versión Facebook (obligatoria): `node scripts/render_fb.js semanas/AAAA-MM-DD/<post>.html semanas/AAAA-MM-DD/fb-<post>` (quita "Desliza →" y contadores), convertir a JPG y poner las rutas en `imagenes_facebook` de cada post. En Facebook varias fotos se ven como mosaico: la portada debe funcionar sola y el texto importante debe ir centrado, lejos de los bordes.
 4. Crear `semanas/AAAA-MM-DD/vista-previa.png` (todas las diapositivas) y hacer push.
 5. Enviar al dueño la vista previa (notificación + archivos) con los 3 posts y captions, y pedir aprobación.
 6. Cuando el dueño apruebe (en esa misma sesión): cambiar a `aprobado` los posts aprobados, aplicar cambios pedidos, push. Si la fecha de un post ya pasó, preguntar si publicarlo ya (`python3 scripts/publicar.py --id ID`) o moverlo de fecha.
