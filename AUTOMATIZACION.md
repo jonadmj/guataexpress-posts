@@ -21,7 +21,7 @@ Instrucciones para las sesiones programadas de Claude. Leer también `marca.md`,
 6. Cuando el dueño apruebe (en esa misma sesión): cambiar a `aprobado` los posts aprobados, aplicar cambios pedidos, push. Si la fecha de un post ya pasó, preguntar si publicarlo ya (`python3 scripts/publicar.py --id ID`) o moverlo de fecha.
 
 ## Lunes/miércoles/viernes — publicar
-1. `python3 scripts/publicar.py` (publica lo `aprobado` con fecha de hoy, hora Colombia).
+1. `python3 scripts/publicar.py` (publica lo `aprobado` con fecha de hoy, hora Colombia, en Instagram y en la página de Facebook). Si Facebook falla, Instagram ya está publicado: avisar al dueño del error (queda en `facebook_error`).
 2. Push de `cola.json` actualizado y marcar ✅ en `plan-contenido.md`.
 3. Revisar comentarios: `python3 scripts/comentarios.py pendientes`. Para cada comentario sin respuesta, proponer una respuesta (tono de `marca.md`, en el idioma del comentario; si preguntan precio/reserva → invitar a WhatsApp +57 321 729 3431; no inventar datos). Quejas o temas delicados: no proponer respuesta automática, solo avisar.
 4. Notificar al dueño en un solo mensaje: enlace del post publicado (o aviso si no había post aprobado) + lista de comentarios pendientes con la respuesta propuesta. Pedir "ok" (o cambios) en esta sesión.

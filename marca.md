@@ -41,3 +41,5 @@ Tour privado: recogida en hotel/Airbnb, horario flexible. Paradas: Alto del Choc
 
 ## Instagram (API)
 - Cuenta: @guataexpress (ID 17841454983723996). Ubicaciones: ver `ubicaciones.md`.
+- Página de Facebook: Guataexpress (ID 730069583528980). `scripts/publicar.py` publica cada post aprobado también en Facebook (mismo caption, fotos y ubicación). Para no publicar un post en Facebook: `"facebook": false` en `cola.json`.
+- Token: usuario del sistema "GuataExpress Bot" del portfolio Guataexpress (no caduca).

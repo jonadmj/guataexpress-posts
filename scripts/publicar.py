@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Publica en Instagram los posts aprobados de cola.json cuya fecha es hoy (hora de Colombia).
+"""Publica en Instagram (y en la página de Facebook) los posts aprobados de cola.json cuya fecha es hoy (hora de Colombia).
 
 Uso:  python3 scripts/publicar.py [--dry-run] [--fecha AAAA-MM-DD] [--id ID]
 El token lo inyecta el proxy de Claude para graph.facebook.com (no hace falta variable).
@@ -9,17 +9,38 @@ from pathlib import Path
 
 G = "https://graph.facebook.com/v21.0"
 IG = "17841454983723996"
+PAGE = "730069583528980"  # página de Facebook Guataexpress
 RAW = "https://raw.githubusercontent.com/jonadmj/guataexpress-posts/main/"
 COLA = Path(__file__).resolve().parent.parent / "cola.json"
 
-def api(path, data=None):
+class ApiError(Exception): pass
+
+def api(path, data=None, fatal=True):
     url = f"{G}/{path}"
     body = urllib.parse.urlencode(data).encode() if data is not None else None
     try:
         with urllib.request.urlopen(urllib.request.Request(url, data=body), timeout=60) as r:
             return json.load(r)
     except urllib.error.HTTPError as e:
-        raise SystemExit(f"Error API en {path}: {e.read().decode()}")
+        msg = f"Error API en {path.split('?')[0]}: {e.read().decode()}"
+        if fatal: raise SystemExit(msg)
+        raise ApiError(msg)
+
+def publicar_facebook(post):
+    """Publica el post en la página de Facebook. Devuelve (post_id, enlace) o lanza ApiError."""
+    pt = api(f"{PAGE}?fields=access_token", fatal=False)["access_token"]  # token de página, solo en memoria
+    fotos = [api(f"{PAGE}/photos", {"url": RAW + p, "published": "false", "access_token": pt}, fatal=False)["id"]
+             for p in post["imagenes"]]
+    d = {"message": post["caption"], "access_token": pt}
+    for k, i in enumerate(fotos): d[f"attached_media[{k}]"] = json.dumps({"media_fbid": i})
+    if post.get("ubicacion_id"):
+        try: r = api(f"{PAGE}/feed", {**d, "place": post["ubicacion_id"]}, fatal=False)
+        except ApiError: r = api(f"{PAGE}/feed", d, fatal=False)  # si Facebook no acepta la ubicación, sin ella
+    else:
+        r = api(f"{PAGE}/feed", d, fatal=False)
+    pid = r["id"]
+    link = api(f"{pid}?fields=permalink_url&" + urllib.parse.urlencode({"access_token": pt}), fatal=False).get("permalink_url")
+    return pid, link
 
 def esperar(cid):
     for _ in range(30):
@@ -72,5 +93,13 @@ def main():
             p["publicado_en"] = datetime.datetime.now(zoneinfo.ZoneInfo("America/Bogota")).isoformat(timespec="minutes")
             COLA.write_text(json.dumps(cola, ensure_ascii=False, indent=2) + "\n")
             print(f"[{p['id']}] PUBLICADO {p['enlace']}")
+            if p.get("facebook", True):
+                try:
+                    p["facebook_id"], p["enlace_facebook"] = publicar_facebook(p)
+                    print(f"[{p['id']}] FACEBOOK {p['enlace_facebook']}")
+                except (ApiError, KeyError) as e:
+                    p["facebook_error"] = str(e)[:300]
+                    print(f"[{p['id']}] FACEBOOK FALLÓ (Instagram sí se publicó): {e}")
+                COLA.write_text(json.dumps(cola, ensure_ascii=False, indent=2) + "\n")
 
 if __name__ == "__main__": main()
