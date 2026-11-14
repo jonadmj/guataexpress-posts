@@ -68,7 +68,7 @@
     {
       "id": "2026-11-14-fb-resenas",
       "fecha": "2026-11-14",
-      "estado": "aprobado",
+      "estado": "publicado",
       "solo_facebook": true,
       "origen": "2026-11-09-resenas",
       "imagenes": [
@@ -84,7 +84,10 @@
         "semanas/2026-11-09/fb-lunes-resenas-2.jpg",
         "semanas/2026-11-09/fb-lunes-resenas-3.jpg",
         "semanas/2026-11-09/fb-lunes-resenas-4.jpg"
-      ]
+      ],
+      "facebook_id": "730069583528980_122180773496988676",
+      "enlace_facebook": "https://www.facebook.com/122180722280988676/posts/122180773496988676",
+      "publicado_en": "2026-11-14T08:54-05:00"
     },
     {
       "id": "2026-11-15-fb-san-rafael",
