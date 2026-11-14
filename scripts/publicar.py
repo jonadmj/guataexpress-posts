@@ -87,6 +87,16 @@ def main():
     for p in sel:
         if p["estado"] != "aprobado":
             print(f"[{p['id']}] estado={p['estado']} → NO se publica"); continue
+        if p.get("solo_facebook"):  # post ya publicado en Instagram que solo se sube a Facebook
+            check_urls(p["imagenes"]); print(f"[{p['id']}] solo Facebook, {len(p['imagenes'])} imagen(es)")
+            if a.dry_run: print("  dry-run: imágenes accesibles, no se crea nada"); continue
+            try:
+                p["facebook_id"], p["enlace_facebook"] = publicar_facebook(p); p["estado"] = "publicado"
+                p["publicado_en"] = datetime.datetime.now(zoneinfo.ZoneInfo("America/Bogota")).isoformat(timespec="minutes")
+                print(f"[{p['id']}] FACEBOOK {p['enlace_facebook']}")
+            except (ApiError, KeyError) as e:
+                p["facebook_error"] = str(e)[:300]; print(f"[{p['id']}] FACEBOOK FALLÓ: {e}")
+            COLA.write_text(json.dumps(cola, ensure_ascii=False, indent=2) + "\n"); continue
         r = publicar(p, a.dry_run)
         if r:
             p["estado"] = "publicado"; p["media_id"], p["enlace"] = r
