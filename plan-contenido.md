@@ -28,3 +28,6 @@ Rotar pilares para no repetir. Marcar con ✅ + fecha + enlace cuando se publiqu
 
 ## Ideas del dueño
 (Escribe aquí ideas, ofertas o fechas especiales — temporada alta, festivos, promociones.)
+
+## Vídeos guardados (sin publicar)
+- `videos/2026-11-promo/guataexpress-promo.mp4` — promo de 22 s, vertical 1080×1920, sin sonido ("Aterrizaste. / Nosotros manejamos. / Tú disfrutas." + 5.0 en 94 opiniones). Fuente editable: `promo.html`. Pendiente de decidir: música (añadir en la app), voz propia o versión en inglés.
