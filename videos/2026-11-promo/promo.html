@@ -1,0 +1,130 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../plantillas/fuentes/fuentes.css">
+<style>
+:root{--navy:#1e3a5f;--navy2:#0f2238;--orange:#e4844a;--red:#c8432f;--teal:#2b9a8a;--sun:#f2b541;--cream:#f4ead9;--ink:#14243a}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000;font-family:Inter,sans-serif}
+.scene{position:absolute;inset:0;overflow:hidden}
+.a{animation-duration:var(--d,.7s);animation-delay:var(--t,0s);animation-fill-mode:both;animation-timing-function:cubic-bezier(.2,.8,.2,1)}
+@keyframes up{from{transform:translateY(70px);opacity:0}to{transform:none;opacity:1}}
+@keyframes pop{0%{transform:scale(.5);opacity:0}70%{transform:scale(1.06);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes flip{from{transform:rotateX(-92deg)}to{transform:none}}
+@keyframes wipeUp{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0)}}
+@keyframes wipeL{from{clip-path:inset(0 0 0 100%)}to{clip-path:inset(0)}}
+@keyframes wipeR{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}
+@keyframes kb{from{transform:scale(1.03)}to{transform:scale(1.17)}}
+@keyframes kb2{from{transform:scale(1.17) translateY(-2%)}to{transform:scale(1.04)}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes ride{from{offset-distance:0%}to{offset-distance:100%}}
+@keyframes drop{0%{transform:translateY(-140px) scale(1.15);opacity:0}100%{transform:none;opacity:1}}
+@keyframes slideIn{from{transform:translateX(120%)}to{transform:none}}
+@keyframes stripe{from{transform:translateX(0)}to{transform:translateX(-240px)}}
+@keyframes grain{0%{transform:translate(0,0)}25%{transform:translate(-90px,60px)}50%{transform:translate(70px,-110px)}75%{transform:translate(-40px,-50px)}100%{transform:translate(0,0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.up{animation-name:up}.pop{animation-name:pop}.fade{animation-name:fade}
+.mono{font-family:'Space Mono',monospace;font-weight:700;letter-spacing:6px;text-transform:uppercase}
+.ser{font-family:Instrument;font-style:italic}
+.ant{font-family:Anton;text-transform:uppercase;line-height:.9}
+.hand{font-family:Caveat;font-weight:700}
+.bg{position:absolute;inset:-2%;background-size:cover;background-position:center}
+#grain{position:absolute;inset:-200px;background:url(grain.png);opacity:.16;mix-blend-mode:overlay;z-index:99;animation:grain .4s steps(4) infinite;pointer-events:none}
+/* S1 */
+#s1{background:radial-gradient(1300px 900px at 50% 40%,#27496f,var(--navy2) 72%);color:#fff;z-index:1}
+.flaprow{display:flex;gap:10px;justify-content:center;perspective:900px}
+.flaprow b{width:96px;height:132px;background:#08121f;border-radius:10px;display:grid;place-items:center;font-family:'Space Mono';font-size:78px;color:var(--sun);position:relative;transform-origin:50% 0;animation-name:flip;box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}
+.flaprow b::after{content:"";position:absolute;left:0;right:0;top:50%;height:3px;background:#000b}
+#s1>*{translate:0 190px}
+/* S2 */
+#s2{background:var(--cream);background-image:linear-gradient(rgba(20,36,58,.06) 2px,transparent 2px),linear-gradient(90deg,rgba(20,36,58,.06) 2px,transparent 2px);background-size:90px 90px;z-index:2;animation-name:wipeUp;color:var(--ink)}
+.note{position:absolute;font-size:64px;color:var(--navy)}
+.rider{position:absolute;left:0;top:0;width:150px;height:150px;margin:-75px 0 0 -75px;offset-path:path("M170 1420 C 470 1420, 300 1150, 560 1120 S 760 900, 880 880");offset-rotate:0deg;animation-name:ride;animation-timing-function:cubic-bezier(.45,0,.3,1);filter:drop-shadow(0 10px 18px rgba(0,0,0,.3))}
+/* S3 */
+#s3{z-index:3;background:#000;animation-name:wipeL}
+.shot{position:absolute;inset:0;overflow:hidden}
+.shot .bg{animation-timing-function:linear}
+.cap{position:absolute;color:#fff;font-size:92px;text-shadow:0 3px 18px rgba(0,0,0,.55);rotate:-5deg}
+.vig{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,35,.7),rgba(10,20,35,.25) 26%,rgba(10,20,35,0) 42%,rgba(10,20,35,0) 78%,rgba(10,20,35,.5))}
+/* S4 */
+#s4{z-index:4;background:radial-gradient(1300px 900px at 50% 38%,#27496f,var(--navy2) 72%);color:#fff;animation-name:wipeUp}
+.star{display:inline-block;animation-name:pop;color:var(--sun)}
+.pass{position:absolute;left:70px;right:70px;top:1010px;height:470px;display:flex;rotate:-3deg;filter:drop-shadow(0 24px 40px rgba(0,0,0,.4));animation-name:slideIn}
+.pass .main{flex:1;background:#fff;color:var(--ink);border-radius:30px 0 0 30px;padding:40px 44px;position:relative}
+.pass .stub{width:230px;background:var(--orange);border-radius:0 30px 30px 0;border-left:5px dashed #fff;padding:40px 26px;color:#fff}
+/* S5 */
+#s5{z-index:5;background:var(--cream);color:var(--ink);animation-name:wipeR;text-align:center}
+.zoc{position:absolute;left:0;bottom:0;height:70px;width:1600px;display:flex;animation:stripe 3s linear infinite}
+.zoc i{flex:0 0 120px;position:relative}
+.zoc i::after{content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;background:rgba(255,255,255,.55);transform:translate(-50%,-50%) rotate(45deg)}
+.wa{display:inline-flex;align-items:center;gap:22px;background:#25D366;color:#fff;border-radius:999px;padding:34px 56px;font-weight:800;font-size:58px}
+.wa svg{width:70px;height:70px;fill:#fff}
+</style></head><body>
+
+<!-- S1 · 0–3.3s -->
+<section class="scene" id="s1">
+  <div class="mono a fade" style="--t:.1s;position:absolute;top:470px;left:0;right:0;text-align:center;font-size:34px;opacity:.75">Llegadas · Arrivals</div>
+  <div class="flaprow" style="position:absolute;top:580px;left:0;right:0">
+    <b class="a" style="--t:.15s;--d:.35s">M</b><b class="a" style="--t:.25s;--d:.35s">E</b><b class="a" style="--t:.35s;--d:.35s">D</b><b class="a" style="--t:.45s;--d:.35s">E</b><b class="a" style="--t:.55s;--d:.35s">L</b><b class="a" style="--t:.65s;--d:.35s">L</b><b class="a" style="--t:.75s;--d:.35s">Í</b><b class="a" style="--t:.85s;--d:.35s">N</b>
+  </div>
+  <div class="flaprow" style="position:absolute;top:740px;left:0;right:0">
+    <b class="a" style="--t:.9s;--d:.35s;color:#fff">M</b><b class="a" style="--t:.97s;--d:.35s;color:#fff">D</b><b class="a" style="--t:1.04s;--d:.35s;color:#fff">E</b><b class="a" style="--t:1.11s;--d:.35s;background:none;box-shadow:none;color:var(--orange)">✈</b><b class="a" style="--t:1.18s;--d:.35s;color:#7fe0a0;width:auto;padding:0 26px;font-size:54px">ON TIME</b>
+  </div>
+  <div class="ser a up" style="--t:1.5s;position:absolute;top:980px;left:0;right:0;text-align:center;font-size:190px;line-height:1">Aterrizaste.</div>
+  <div class="mono a fade" style="--t:2s;position:absolute;top:1210px;left:0;right:0;text-align:center;font-size:32px;color:var(--sun)">You've landed</div>
+</section>
+
+<!-- S2 · 3.3–7.6s -->
+<section class="scene a" id="s2" style="--t:3.3s;--d:.55s">
+  <div class="ant a up" style="--t:3.7s;position:absolute;top:290px;left:80px;font-size:170px;color:var(--navy2)">Nosotros<br><span style="color:var(--red)">manejamos.</span></div>
+  <svg style="position:absolute;inset:0" width="1080" height="1920" viewBox="0 0 1080 1920">
+    <path class="a" pathLength="1" d="M170 1420 C 470 1420, 300 1150, 560 1120 S 760 900, 880 880" fill="none" stroke="#1e3a5f" stroke-width="12" stroke-linecap="round" stroke-dasharray="1" style="--t:4.3s;--d:2.2s;animation-name:draw;animation-timing-function:cubic-bezier(.45,0,.3,1)"/>
+    <circle cx="170" cy="1420" r="26" fill="#1e3a5f"/><circle cx="170" cy="1420" r="10" fill="#f4ead9"/>
+    <g class="a pop" style="--t:6.3s;transform-origin:880px 880px"><circle cx="880" cy="880" r="30" fill="#c8432f"/><circle cx="880" cy="880" r="11" fill="#f4ead9"/></g>
+  </svg>
+  <div class="mono" style="position:absolute;left:90px;top:1490px;font-size:30px;color:var(--navy)">MDE · Aeropuerto</div>
+  <div class="hand a pop" style="--t:6.4s;--d:.5s;position:absolute;right:80px;top:985px;font-size:110px;color:var(--red);rotate:-5deg">¡Guatapé!</div>
+  <img class="rider a" src="../../logo/logo-circular.png" style="--t:4.3s;--d:2.2s">
+  <div class="note hand a up" style="--t:4.9s;left:540px;top:1300px;rotate:-4deg">snacks a bordo ✓</div>
+  <div class="note hand a up" style="--t:5.4s;left:90px;top:930px;rotate:3deg">conductor bilingüe ✓</div>
+  <div class="note hand a up" style="--t:5.9s;left:90px;top:770px;rotate:-3deg">SUV privada ✓</div>
+  <div class="mono a fade" style="--t:4.1s;position:absolute;left:84px;top:650px;font-size:30px;color:var(--navy);opacity:.7">We drive. You relax.</div>
+</section>
+
+<!-- S3 · 7.6–13.6s -->
+<section class="scene a" id="s3" style="--t:7.6s;--d:.5s">
+  <div class="shot"><div class="bg a" style="--t:7.6s;--d:1.9s;animation-name:kb;background-image:url(../../fotos-nuevas/letras-guatape-penol.jpg);background-position:center 60%"></div><div class="vig"></div>
+    <div class="cap hand a up" style="--t:8s;left:90px;top:480px">Guatapé ♥</div></div>
+  <div class="shot a" style="--t:9.1s;--d:.4s;animation-name:wipeUp"><div class="bg a" style="--t:9.1s;--d:1.9s;animation-name:kb2;background-image:url(../../fotos-nuevas/casa-al-reves-clientes.jpg);background-position:center 70%"></div><div class="vig"></div>
+    <div class="cap hand a up" style="--t:9.4s;left:90px;top:480px;rotate:4deg">la Casa al Revés</div></div>
+  <div class="shot a" style="--t:10.6s;--d:.4s;animation-name:wipeR"><div class="bg a" style="--t:10.6s;--d:1.9s;animation-name:kb;background-image:url(../../fotos-nuevas/san-rafael-cascada-poza.jpg)"></div><div class="vig"></div>
+    <div class="cap hand a up" style="--t:10.9s;left:90px;top:480px">San Rafael</div></div>
+  <div class="shot a" style="--t:12.1s;--d:.4s;animation-name:wipeUp"><div class="bg a" style="--t:12.1s;--d:1.9s;animation-name:kb2;background-image:url(../../fotos-nuevas/grupo-grande-penol.jpg);background-position:center 35%"></div><div class="vig"></div>
+    <div class="cap hand a up" style="--t:12.4s;left:90px;top:480px;rotate:3deg">El Peñol</div></div>
+  <div class="ant a up" style="--t:8.1s;position:absolute;left:80px;top:290px;font-size:170px;color:#fff;z-index:9;text-shadow:0 4px 24px rgba(0,0,0,.35)">Tú <span style="color:var(--sun)">disfrutas.</span></div>
+</section>
+
+<!-- S4 · 13.6–17.6s -->
+<section class="scene a" id="s4" style="--t:13.6s;--d:.5s">
+  <div class="mono a fade" style="--t:14s;position:absolute;top:300px;left:0;right:0;text-align:center;font-size:32px;opacity:.75">Lo dicen ellos</div>
+  <div class="a pop" style="--t:14s;position:absolute;top:340px;left:0;right:0;text-align:center;font-family:'DM Serif';font-size:470px;line-height:1;color:var(--orange)">5.0</div>
+  <div style="position:absolute;top:800px;left:0;right:0;text-align:center;font-size:96px;letter-spacing:22px">
+    <span class="star a" style="--t:14.4s;--d:.35s">★</span><span class="star a" style="--t:14.52s;--d:.35s">★</span><span class="star a" style="--t:14.64s;--d:.35s">★</span><span class="star a" style="--t:14.76s;--d:.35s">★</span><span class="star a" style="--t:14.88s;--d:.35s">★</span></div>
+  <div class="mono a fade" style="--t:15s;position:absolute;top:930px;left:0;right:0;text-align:center;font-size:30px">94 opiniones · Google + Tripadvisor</div>
+  <div class="pass a" style="--t:15.2s;--d:.7s">
+    <div class="main"><div class="mono" style="font-size:22px;letter-spacing:4px;color:var(--orange)">Boarding pass · MDE ✈ GTP</div>
+      <div style="font-family:'DM Serif';font-style:italic;font-size:66px;line-height:1.1;margin-top:26px">“These guys deserve six stars not five.”</div>
+      <div class="mono" style="position:absolute;left:44px;bottom:34px;font-size:22px;letter-spacing:2px;color:#7b8594">Pasajero <span style="color:var(--ink);font-size:28px">Jaspaul G.</span></div></div>
+    <div class="stub"><div class="mono" style="font-size:20px;letter-spacing:3px;opacity:.85">Rating</div><div class="ant" style="font-size:60px;margin-top:14px">★ 5/5</div><div class="mono" style="font-size:24px;letter-spacing:2px;margin-top:16px">Google</div></div>
+  </div>
+</section>
+
+<!-- S5 · 17.6–22s -->
+<section class="scene a" id="s5" style="--t:17.6s;--d:.5s">
+  <img class="a pop" src="../../logo/logo-circular.png" style="--t:18s;width:420px;margin-top:330px">
+  <div class="ant a up" style="--t:18.4s;font-size:128px;color:var(--navy2);margin-top:50px">Aeropuerto MDE<br><span style="color:var(--red)">⇄ Guatapé</span></div>
+  <div class="ser a up" style="--t:18.8s;font-size:74px;color:var(--navy);margin-top:34px">Transporte privado, desde 2019.</div>
+  <div class="a pop" style="--t:19.2s;margin-top:70px"><span class="wa"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c-.1-.1-.2-.2-.5-.3z"/></svg>+57 321 729 3431</span></div>
+  <div class="mono a fade" style="--t:19.6s;font-size:30px;color:var(--navy);margin-top:44px">guataexpress.com · 24/7</div>
+  <div class="zoc"><i style="background:#c8432f"></i><i style="background:#e4844a"></i><i style="background:#f2b541"></i><i style="background:#2b9a8a"></i><i style="background:#1e3a5f"></i><i style="background:#c8432f"></i><i style="background:#e4844a"></i><i style="background:#f2b541"></i><i style="background:#2b9a8a"></i><i style="background:#1e3a5f"></i><i style="background:#c8432f"></i><i style="background:#e4844a"></i><i style="background:#f2b541"></i><i style="background:#2b9a8a"></i></div>
+</section>
+<div id="grain"></div>
+</body></html>
