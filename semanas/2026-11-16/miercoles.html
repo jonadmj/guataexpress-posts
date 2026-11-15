@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+.menu{background:var(--forest);color:var(--cream)}
+.frame{position:absolute;inset:44px;border:3px solid rgba(244,234,217,.5);border-radius:6px}
+.frame::after{content:"";position:absolute;inset:12px;border:1px solid rgba(244,234,217,.35)}
+.item{position:absolute;left:120px;right:120px}
+.item .row{display:flex;align-items:baseline;gap:16px}
+.item h3{font-family:'DM Serif';font-size:66px;line-height:1.05;white-space:nowrap}
+.item .dots{flex:1;border-bottom:4px dotted rgba(244,234,217,.45);transform:translateY(-10px)}
+.item .tag{font-family:'Space Mono';font-weight:700;font-size:24px;letter-spacing:3px;color:var(--sun);white-space:nowrap}
+.item p{font-family:Instrument;font-style:italic;font-size:42px;line-height:1.2;opacity:.9;margin-top:10px}
+.item .tip{font-family:Caveat;font-weight:700;font-size:44px;color:var(--sun);margin-top:6px}
+.off{position:absolute;right:96px;width:170px;height:170px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;text-align:center;font-family:Anton;font-size:50px;line-height:.95;rotate:12deg;border:4px dashed #fff8}
+</style></head><body>
+<section class="s menu" id="s1"><div class="frame"></div>
+<img class="logo" src="../../logo/logo-circular.png" style="top:110px;left:490px">
+<div class="abs mono" style="top:260px;left:0;right:0;text-align:center;color:var(--sun)">Guía de Guatapé · edición sabores</div>
+<div class="abs dm" style="top:330px;left:0;right:0;text-align:center;font-size:250px;line-height:.9">La<br><i style="color:var(--sun)">carta</i></div>
+<div class="abs ser" style="top:830px;left:0;right:0;text-align:center;font-size:76px">de Guatapé</div>
+<div class="abs" style="top:960px;left:440px;width:200px;border-top:3px solid rgba(244,234,217,.5)"></div>
+<div class="abs ser" style="top:1000px;left:140px;right:140px;text-align:center;font-size:48px;line-height:1.25;opacity:.9">Cinco lugares que recomendamos a nuestros pasajeros después de subir La Piedra.</div>
+<div class="swipe mono" style="right:110px;bottom:100px;color:var(--sun)">Desliza →</div></section>
+<section class="s menu" id="s2"><div class="frame"></div>
+<div class="abs mono" style="top:110px;left:0;right:0;text-align:center;color:var(--sun)">— Para empezar —</div>
+<div class="item" style="top:200px"><div class="row"><h3>Casa de Ciclistas</h3><span class="dots"></span><span class="tag">Brunch</span></div><p>Comida casera, pan artesanal y buen café.</p><div class="tip">pregunta por los helados de frutas amazónicas</div></div>
+<div class="off" style="top:470px">10%<br>OFF*</div>
+<div class="item" style="top:620px"><div class="row"><h3>El Bretón</h3><span class="dots"></span><span class="tag">Crêpes</span></div><p>Solo crêpes, hechas por su dueño y chef francés.</p><div class="tip">tranquilo, lejos del bullicio</div></div>
+<div class="off" style="top:860px;rotate:-10deg">10%<br>OFF*</div>
+<div class="item" style="top:1010px"><div class="row"><h3>Peregrino</h3><span class="dots"></span><span class="tag">Típica</span></div><p>Sabores locales e internacionales.</p><div class="tip">el sitio para probar la bandeja paisa</div></div>
+<div class="swipe mono" style="right:110px;bottom:84px;color:var(--sun)">Desliza →</div></section>
+<section class="s menu" id="s3"><div class="frame"></div>
+<div class="abs mono" style="top:110px;left:0;right:0;text-align:center;color:var(--sun)">— Algo dulce y un café —</div>
+<div class="item" style="top:220px"><div class="row"><h3>Zocarolls</h3><span class="dots"></span><span class="tag">Postres</span></div><p>Rollos de canela recién horneados y café colombiano.</p><div class="tip">la torta de zanahoria es la favorita</div></div>
+<div class="item" style="top:590px"><div class="row"><h3>Café Del Porto</h3><span class="dots"></span><span class="tag">Café</span></div><p>Café colombiano de calidad y repostería casera.</p><div class="tip">en plena Plazoleta de los Zócalos</div></div>
+<div class="abs" style="left:120px;right:120px;top:950px;border:3px dashed var(--sun);border-radius:20px;padding:34px 38px"><div class="mono" style="color:var(--sun)">* El 10% OFF</div><div class="ser" style="font-size:44px;line-height:1.2;margin-top:10px">Muestra la tarjeta de nuestra Guía de Guatapé en guataexpress.com</div></div>
+<div class="swipe mono" style="right:110px;bottom:84px;color:var(--sun)">Desliza →</div></section>
+<section class="s menu" id="s4"><div class="frame"></div>
+<div class="abs mono" style="top:150px;left:0;right:0;text-align:center;color:var(--sun)">— La cuenta —</div>
+<div class="abs dm" style="top:230px;left:100px;right:100px;text-align:center;font-size:124px;line-height:1">Tú eliges<br>el <i style="color:var(--sun)">restaurante</i>.</div>
+<div class="abs ser" style="top:560px;left:0;right:0;text-align:center;font-size:84px">Nosotros te llevamos.</div>
+<img src="../../logo/logo-circular.png" class="abs" style="top:720px;left:420px;width:240px">
+<div class="abs" style="top:1010px;left:0;right:0;text-align:center"><span class="wa"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c-.1-.1-.2-.2-.5-.3z"/></svg> +57 321 729 3431</span></div>
+<div class="abs mono" style="top:1150px;left:0;right:0;text-align:center;color:var(--sun)">Guía completa en guataexpress.com</div></section>
+</body></html>

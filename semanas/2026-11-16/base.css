@@ -1,0 +1,19 @@
+@import url(../../plantillas/fuentes/fuentes.css);
+:root{--navy:#1e3a5f;--navy2:#0f2238;--orange:#e4844a;--red:#c8432f;--teal:#2b9a8a;--sun:#f2b541;--cream:#f4ead9;--ink:#14243a;--forest:#0f2e27}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#888;font-family:Inter,sans-serif}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden}
+.bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.abs{position:absolute}
+.ant{font-family:Anton;text-transform:uppercase;line-height:.9}
+.ser{font-family:Instrument;font-style:italic}
+.dm{font-family:'DM Serif'}
+.hand{font-family:Caveat;font-weight:700}
+.mono{font-family:'Space Mono',monospace;font-weight:700;letter-spacing:5px;text-transform:uppercase;font-size:22px}
+.logo{position:absolute;width:100px;z-index:5}
+.swipe{position:absolute;right:70px;bottom:64px;z-index:6}
+.wa{display:inline-flex;align-items:center;gap:18px;background:#25D366;color:#fff;border-radius:999px;padding:26px 40px;font-weight:800;font-size:38px}
+.wa svg{width:48px;height:48px;fill:#fff}
+.zocalo{position:absolute;left:0;right:0;bottom:0;height:46px;display:flex;z-index:4}
+.zocalo i{flex:1;position:relative}
+.zocalo i::after{content:"";position:absolute;left:50%;top:50%;width:18px;height:18px;background:rgba(255,255,255,.55);transform:translate(-50%,-50%) rotate(45deg)}

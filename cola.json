@@ -156,6 +156,63 @@
         "2026-11-carrusel-traslados/fb-guataexpress-carrusel-4.jpg",
         "2026-11-carrusel-traslados/fb-guataexpress-carrusel-5.jpg"
       ]
+    },
+    {
+      "id": "2026-11-16-tour-privado",
+      "fecha": "2026-11-16",
+      "estado": "borrador",
+      "imagenes": [
+        "semanas/2026-11-16/lunes-tour-privado-1.jpg",
+        "semanas/2026-11-16/lunes-tour-privado-2.jpg",
+        "semanas/2026-11-16/lunes-tour-privado-3.jpg",
+        "semanas/2026-11-16/lunes-tour-privado-4.jpg"
+      ],
+      "imagenes_facebook": [
+        "semanas/2026-11-16/fb-lunes-tour-privado-1.jpg",
+        "semanas/2026-11-16/fb-lunes-tour-privado-2.jpg",
+        "semanas/2026-11-16/fb-lunes-tour-privado-3.jpg",
+        "semanas/2026-11-16/fb-lunes-tour-privado-4.jpg"
+      ],
+      "caption": "🗺️ Un día, 5 paradas: así es nuestro tour privado a Guatapé desde Medellín.\n\n1️⃣ Alto del Chocho (¡con llamas! 🦙)\n2️⃣ Réplica del Viejo Peñol\n3️⃣ La Casa al Revés\n4️⃣ La Piedra del Peñol\n5️⃣ Tiempo libre en Guatapé\n\nPuerta a puerta, en SUV privada, con conductor bilingüe, snacks y seguro de viaje. Tú eliges el horario. Las entradas a la Casa al Revés y a La Piedra son opcionales y se pagan allí. 📸 @atypical_housecol\n\n🇺🇸 One day, 5 stops: our private Guatapé tour from Medellín. Door to door, flexible schedule, bilingual driver.\n\n📲 Cotiza por WhatsApp / Get a quote: +57 321 729 3431\n🌐 www.guataexpress.com\n\n#Guatapé #Medellín #ElPeñol #Colombia #TransportePrivado #MedellinTravel #ColombiaTravel",
+      "ubicacion_id": "113090228704415"
+    },
+    {
+      "id": "2026-11-18-donde-comer",
+      "fecha": "2026-11-18",
+      "estado": "borrador",
+      "imagenes": [
+        "semanas/2026-11-16/miercoles-donde-comer-1.jpg",
+        "semanas/2026-11-16/miercoles-donde-comer-2.jpg",
+        "semanas/2026-11-16/miercoles-donde-comer-3.jpg",
+        "semanas/2026-11-16/miercoles-donde-comer-4.jpg"
+      ],
+      "imagenes_facebook": [
+        "semanas/2026-11-16/fb-miercoles-donde-comer-1.jpg",
+        "semanas/2026-11-16/fb-miercoles-donde-comer-2.jpg",
+        "semanas/2026-11-16/fb-miercoles-donde-comer-3.jpg",
+        "semanas/2026-11-16/fb-miercoles-donde-comer-4.jpg"
+      ],
+      "caption": "🍽️ La carta de Guatapé: 5 lugares que recomendamos a nuestros pasajeros.\n\n🥖 Casa de Ciclistas · brunch y pan artesanal\n🥞 El Bretón · crêpes de chef francés\n🍴 Peregrino · para probar la bandeja paisa\n🍰 Zocarolls · rollos de canela y torta de zanahoria\n☕ Café Del Porto · en la Plazoleta de los Zócalos\n\n🎁 En Casa de Ciclistas y El Bretón tienes 10% OFF mostrando la tarjeta de nuestra Guía de Guatapé (guataexpress.com).\n\n🇺🇸 Our 5 favorite places to eat in Guatapé. Save this for your trip!\n\n🚙 Tú eliges el restaurante, nosotros te llevamos.\n📲 WhatsApp: +57 321 729 3431 · 24/7\n\n#Guatapé #Medellín #ElPeñol #Colombia #TransportePrivado #MedellinTravel #ColombiaTravel #DondeComer #FoodieColombia",
+      "ubicacion_id": "113090228704415"
+    },
+    {
+      "id": "2026-11-20-preguntas",
+      "fecha": "2026-11-20",
+      "estado": "borrador",
+      "imagenes": [
+        "semanas/2026-11-16/viernes-preguntas-1.jpg",
+        "semanas/2026-11-16/viernes-preguntas-2.jpg",
+        "semanas/2026-11-16/viernes-preguntas-3.jpg",
+        "semanas/2026-11-16/viernes-preguntas-4.jpg"
+      ],
+      "imagenes_facebook": [
+        "semanas/2026-11-16/fb-viernes-preguntas-1.jpg",
+        "semanas/2026-11-16/fb-viernes-preguntas-2.jpg",
+        "semanas/2026-11-16/fb-viernes-preguntas-3.jpg",
+        "semanas/2026-11-16/fb-viernes-preguntas-4.jpg"
+      ],
+      "caption": "💬 Lo que más nos preguntan por WhatsApp:\n\n🌙 ¿Atienden de noche? Sí, 24/7.\n🗣️ ¿Hablan inglés? Sí, conductores bilingües.\n🧳 ¿Caben las maletas? Viajamos en camionetas SUV; cuéntanos cuántos son y lo organizamos.\n👥 ¿Es compartido? No, es privado: solo tú y tu grupo.\n\n🇺🇸 Your top questions, answered: we run 24/7, our drivers are bilingual, and every ride is private.\n\n¿Tienes otra pregunta? Escríbenos 👇\n📲 WhatsApp: +57 321 729 3431\n🌐 www.guataexpress.com\n\n#Guatapé #Medellín #ElPeñol #Colombia #TransportePrivado #MedellinTravel #ColombiaTravel #AeropuertoMDE #AirportTransfer",
+      "ubicacion_id": null
     }
   ]
 }

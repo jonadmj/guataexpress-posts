@@ -15,8 +15,8 @@ Rotar pilares para no repetir. Marcar con ✅ + fecha + enlace cuando se publiqu
 |---|---|---|---|---|
 | 1 | Servicio | Aeropuerto MDE ⇄ Guatapé sin estrés | Carrusel | ✅ 2026-11-08 https://www.instagram.com/p/Dfd3lI6F1SJ/ |
 | 2 | Guía | Tips para subir la Piedra del Peñol (+700 escalones, a primera hora…) | Carrusel | ✅ 2026-11-13 https://www.instagram.com/p/Dfr7_NwFP_J/ |
-| 3 | Experiencias | Tour privado: las 5 paradas del día | Carrusel | |
-| 4 | Guía | Dónde comer en Guatapé (restaurantes de la guía, 10% OFF) | Carrusel | |
+| 3 | Experiencias | Tour privado: las 5 paradas del día | Carrusel | 🗓️ borrador 2026-11-16 |
+| 4 | Guía | Dónde comer en Guatapé (restaurantes de la guía, 10% OFF) | Carrusel | 🗓️ borrador 2026-11-18 |
 | 5 | FAQ | ¿Cuánto se tarda del aeropuerto a Guatapé? ¿Y con equipaje? | Imagen | ⚠️ falta dato de duración |
 | 6 | Confianza | Reseñas reales: 5.0 en 94 opiniones | Carrusel | ✅ 2026-11-09 https://www.instagram.com/p/DfhfK2amuwg/ |
 | 7 | Guía | Qué significan los zócalos de Guatapé | Carrusel | |
@@ -24,7 +24,7 @@ Rotar pilares para no repetir. Marcar con ✅ + fecha + enlace cuando se publiqu
 | 9 | Servicio | Traslado privado vs bus: comparación | Carrusel | |
 | 10 | Guía | Plan perfecto de 1 día en Guatapé | Carrusel | |
 | 11 | Confianza | Conoce a nuestros conductores | Carrusel | ⚠️ faltan fotos/nombres |
-| 12 | FAQ | ¿Seguimos tu vuelo si se retrasa? ¿Atienden de noche? (24/7) | Imagen | |
+| 12 | FAQ | Preguntas frecuentes estilo chat (24/7, inglés, maletas, privado) | Carrusel | 🗓️ borrador 2026-11-20 |
 
 ## Ideas del dueño
 (Escribe aquí ideas, ofertas o fechas especiales — temporada alta, festivos, promociones.)
