@@ -92,7 +92,7 @@
     {
       "id": "2026-11-15-fb-san-rafael",
       "fecha": "2026-11-15",
-      "estado": "aprobado",
+      "estado": "publicado",
       "solo_facebook": true,
       "origen": "2026-11-11-san-rafael",
       "imagenes": [
@@ -108,7 +108,10 @@
         "semanas/2026-11-09/fb-miercoles-san-rafael-2.jpg",
         "semanas/2026-11-09/fb-miercoles-san-rafael-3.jpg",
         "semanas/2026-11-09/fb-miercoles-san-rafael-4.jpg"
-      ]
+      ],
+      "facebook_id": "730069583528980_122180909072988676",
+      "enlace_facebook": "https://www.facebook.com/122180722280988676/posts/122180909072988676",
+      "publicado_en": "2026-11-15T08:54-05:00"
     },
     {
       "id": "2026-11-17-fb-tips-penol",
