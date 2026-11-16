@@ -19,7 +19,7 @@ Fuente de verdad para crear posts. Si un dato no está aquí o en la web, NO inv
 | Tour privado Guatapé día completo desde Medellín | 900.000 COP (grupo pequeño — ⚠️ la web dice "hasta 7" y también "hasta 6": confirmar) |
 | San Rafael / Reserva natural | Cotizar por WhatsApp |
 
-Tour privado: recogida en hotel/Airbnb, horario flexible. Paradas: Alto del Chocho, réplica del Viejo Peñol, Casa al Revés (entrada no incluida), Piedra del Peñol (entrada no incluida), tiempo libre en Guatapé. Comidas no incluidas.
+Tour privado: recogida en hotel/Airbnb, horario flexible. Paradas (4, actualizado por el dueño el 2026-11-16): Alto del Chocho, Casa al Revés (entrada no incluida), Piedra del Peñol (entrada no incluida), tiempo libre en Guatapé. YA NO se para en la réplica del Viejo Peñol (la web aún la menciona: no usarla). Comidas no incluidas.
 
 ## Contacto
 - WhatsApp: +57 321 729 3431 · Email: guataexpress@gmail.com · Web: www.guataexpress.com

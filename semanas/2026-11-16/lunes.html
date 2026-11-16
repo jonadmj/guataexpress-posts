@@ -1,38 +1,59 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
 .paper{background:var(--cream);background-image:radial-gradient(rgba(20,36,58,.07) 1.5px,transparent 1.6px);background-size:28px 28px}
-.line{position:absolute;left:150px;top:330px;bottom:150px;border-left:6px dashed var(--navy)}
-.stop{position:absolute;left:96px;right:70px;display:flex;gap:40px;align-items:flex-start}
-.stop .n{flex:none;width:114px;height:114px;border-radius:50%;background:var(--red);color:#fff;font-family:Anton;font-size:60px;display:grid;place-items:center;border:8px solid var(--cream)}
-.stop h3{font-family:Anton;text-transform:uppercase;font-size:78px;line-height:1;color:var(--navy2)}
-.stop p{font-size:38px;line-height:1.3;color:var(--ink);opacity:.8;margin-top:10px;font-weight:500}
-.stop .h{font-family:Caveat;font-weight:700;font-size:54px;color:var(--red);margin-top:6px}
+.win{position:absolute;left:70px;right:70px;bottom:70px;height:510px;border-radius:255px 255px 30px 30px;background-size:cover;background-position:center 62%;border:10px solid var(--cream)}
+.num{font-family:Anton;font-size:190px;line-height:.82;color:var(--cream)}
+.row{display:flex;align-items:flex-end;gap:26px}
+.row span{font-family:Anton;text-transform:uppercase;font-size:96px;line-height:.9;color:var(--navy2);padding-bottom:8px}
+.pin{position:absolute;display:flex;align-items:center;gap:20px}
+.pin b{flex:none;width:92px;height:92px;border-radius:50% 50% 50% 6px;rotate:-45deg;background:var(--red);display:grid;place-items:center}
+.pin b i{rotate:45deg;font-family:Anton;font-style:normal;color:#fff;font-size:46px}
+.pin div{font-family:Anton;text-transform:uppercase;font-size:62px;line-height:1;color:var(--navy2)}
+.pin small{display:block;font-family:Caveat;font-weight:700;text-transform:none;font-size:46px;color:var(--red);margin-top:4px}
+.stamp{position:absolute;width:440px;height:440px;border-radius:50%;display:grid;place-items:center;text-align:center;padding:50px}
+.stamp::before{content:"";position:absolute;inset:14px;border-radius:50%;border:4px dashed currentColor;opacity:.75}
+.stamp .k{font-family:'Space Mono';font-weight:700;font-size:20px;letter-spacing:4px}
+.stamp h3{font-family:Anton;text-transform:uppercase;font-size:60px;line-height:.95;margin:10px 0}
+.stamp p{font-size:27px;line-height:1.25;font-weight:600}
 </style></head><body>
-<section class="s" id="s1"><div class="bg" style="background-image:url(../../fotos-nuevas/casa-al-reves-clientes.jpg);background-position:center 80%"></div>
-<div class="abs" style="inset:0;background:linear-gradient(180deg,rgba(15,34,56,.82) 0%,rgba(15,34,56,.25) 38%,rgba(15,34,56,0) 55%,rgba(15,34,56,.55) 100%)"></div>
+<section class="s" id="s1" style="background:var(--orange)">
 <img class="logo" src="../../logo/logo-circular.png" style="top:60px;right:60px">
-<div class="abs mono" style="top:92px;left:70px;color:var(--sun)">Tour privado · desde Medellín</div>
-<div class="abs ant" style="top:150px;left:66px;color:#fff;font-size:190px">Un día.<br><span style="color:var(--sun)">5 paradas.</span></div>
-<div class="abs hand" style="left:70px;bottom:110px;color:#fff;font-size:70px;rotate:-4deg;text-shadow:0 2px 14px #0008">sí, la casa está al revés</div>
-<div class="swipe mono" style="color:#fff">Desliza →</div><div class="zocalo"><i style="background:#c8432f"></i><i style="background:#e4844a"></i><i style="background:#f2b541"></i><i style="background:#2b9a8a"></i><i style="background:#1e3a5f"></i><i style="background:#c8432f"></i><i style="background:#e4844a"></i><i style="background:#f2b541"></i><i style="background:#2b9a8a"></i></div></section>
+<div class="abs mono" style="top:86px;left:70px;color:var(--navy2)">Tour privado · desde Medellín</div>
+<div class="abs" style="top:140px;left:66px">
+<div class="row"><div class="num">4</div><span>paradas.</span></div>
+<div class="row" style="margin-top:6px"><div class="num">1</div><span>día.</span></div>
+<div class="row" style="margin-top:6px"><div class="num">0</div><span>prisas.</span></div></div>
+<div class="win" style="background-image:url(../../fotos-nuevas/letras-guatape-penol.jpg)"></div>
+<div class="swipe mono" style="top:690px;bottom:auto;right:70px;color:var(--navy2)">Desliza →</div></section>
 <section class="s paper" id="s2"><img class="logo" src="../../logo/logo-circular.png" style="top:60px;right:60px">
-<div class="abs mono" style="top:92px;left:80px;color:var(--red)">Itinerario · 1 de 2</div>
-<div class="abs ser" style="top:130px;left:76px;font-size:120px;color:var(--navy2)">La mañana</div><div class="line"></div>
-<div class="stop" style="top:340px"><div class="n">1</div><div><h3>Alto del Chocho</h3><p>Un parque campestre con animales amigables para estirar las piernas.</p><div class="h">¡hay llamas! 🦙</div></div></div>
-<div class="stop" style="top:680px"><div class="n">2</div><div><h3>Réplica del Viejo Peñol</h3><p>El pueblo que quedó bajo el embalse, recreado para contar su historia.</p></div></div>
-<div class="stop" style="top:980px"><div class="n">3</div><div><h3>La Casa al Revés</h3><p>Una parada surrealista y perfecta para fotos.</p><div class="h">entrada opcional</div></div></div>
+<div class="abs mono" style="top:92px;left:80px;color:var(--red)">La ruta del día</div>
+<div class="abs ser" style="top:128px;left:76px;font-size:112px;color:var(--navy2)">De Medellín a Guatapé</div>
+<svg class="abs" style="inset:0" width="1080" height="1350" viewBox="0 0 1080 1350">
+<path d="M250 1280 C 250 1190, 380 1160, 380 1070 S 120 960, 120 870 S 380 760, 380 670 S 120 560, 120 470 S 250 400, 250 340" fill="none" stroke="#1e3a5f" stroke-width="46" stroke-linecap="round"/>
+<path d="M250 1280 C 250 1190, 380 1160, 380 1070 S 120 960, 120 870 S 380 760, 380 670 S 120 560, 120 470 S 250 400, 250 340" fill="none" stroke="#f4ead9" stroke-width="5" stroke-dasharray="26 22" stroke-linecap="round"/>
+<g stroke="#1e3a5f" stroke-width="4" stroke-dasharray="4 12" stroke-linecap="round"><path d="M430 1070 H500"/><path d="M175 870 H500"/><path d="M430 670 H500"/><path d="M175 470 H500"/></g>
+<g fill="#c8432f" stroke="#f4ead9" stroke-width="8"><circle cx="380" cy="1070" r="34"/><circle cx="120" cy="870" r="34"/><circle cx="380" cy="670" r="34"/><circle cx="120" cy="470" r="34" fill="#2b9a8a"/></g>
+<g fill="#fff" font-family="Anton" font-size="38" text-anchor="middle"><text x="380" y="1084">1</text><text x="120" y="884">2</text><text x="380" y="684">3</text><text x="120" y="484">4</text></g>
+</svg>
+<div class="abs mono" style="left:300px;top:1268px;color:var(--navy)">← Medellín</div>
+<div class="pin" style="left:520px;top:1010px"><div>Alto del Chocho<small>¡hay llamas! 🦙</small></div></div>
+<div class="pin" style="left:520px;top:810px"><div>La Casa al Revés<small>fotos imposibles</small></div></div>
+<div class="pin" style="left:520px;top:610px"><div>La Piedra del Peñol<small>+700 escalones</small></div></div>
+<div class="pin" style="left:520px;top:410px"><div>Guatapé<small>el pueblo de colores</small></div></div>
 <div class="swipe mono" style="color:var(--navy)">Desliza →</div></section>
 <section class="s paper" id="s3"><img class="logo" src="../../logo/logo-circular.png" style="top:60px;right:60px">
-<div class="abs mono" style="top:92px;left:80px;color:var(--red)">Itinerario · 2 de 2</div>
-<div class="abs ser" style="top:130px;left:76px;font-size:120px;color:var(--navy2)">La tarde</div><div class="line" style="bottom:330px"></div>
-<div class="stop" style="top:340px"><div class="n">4</div><div><h3>La Piedra del Peñol</h3><p>Más de 700 escalones hasta una de las mejores vistas de Colombia.</p><div class="h">entrada opcional</div></div></div>
-<div class="stop" style="top:720px"><div class="n">5</div><div><h3>Guatapé</h3><p>Tiempo libre en el pueblo más colorido: zócalos, artesanías y almuerzo junto al lago.</p></div></div>
-<div class="abs" style="left:80px;right:80px;bottom:110px;background:var(--navy);color:#fff;border-radius:28px;padding:34px 40px;font-size:34px;font-weight:600;line-height:1.3">⏰ Tú eliges la hora de salida y de regreso. Sin prisas y sin desconocidos.</div>
-<div class="swipe mono" style="color:var(--navy);bottom:50px">Desliza →</div></section>
-<section class="s" id="s4" style="background:var(--navy2);color:#fff"><div class="bg" style="background-image:url(../../fotos-nuevas/letras-guatape-penol.jpg);background-position:center 65%;bottom:auto;height:640px"></div>
-<div class="abs" style="left:0;right:0;top:340px;height:300px;background:linear-gradient(180deg,rgba(15,34,56,0),var(--navy2))"></div>
+<div class="abs mono" style="top:92px;left:80px;color:var(--red)">Sellos del viaje</div>
+<div class="abs ser" style="top:128px;left:76px;font-size:112px;color:var(--navy2)">Qué vas a vivir</div>
+<div class="stamp" style="left:70px;top:300px;color:var(--red);rotate:-6deg"><div><div class="k">PARADA 01</div><h3>Alto del Chocho</h3><p>Un parque campestre con animales amigables.</p></div></div>
+<div class="stamp" style="left:570px;top:340px;color:var(--teal);rotate:5deg"><div><div class="k">PARADA 02</div><h3>La Casa al Revés</h3><p>Surrealista y perfecta para fotos. Entrada opcional.</p></div></div>
+<div class="stamp" style="left:90px;top:790px;color:var(--navy);rotate:4deg"><div><div class="k">PARADA 03</div><h3>La Piedra del Peñol</h3><p>Una de las mejores vistas de Colombia. Entrada opcional.</p></div></div>
+<div class="stamp" style="left:560px;top:830px;color:#b9651f;rotate:-5deg"><div><div class="k">PARADA 04</div><h3>Guatapé</h3><p>Tiempo libre: zócalos, artesanías y almuerzo junto al lago.</p></div></div>
+<div class="swipe mono" style="color:var(--navy);bottom:40px">Desliza →</div></section>
+<section class="s" id="s4" style="background:var(--navy2);color:#fff"><div class="bg" style="background-image:url(../../fotos-nuevas/casa-al-reves-clientes.jpg);background-position:center 72%;bottom:auto;height:590px"></div>
+<div class="abs" style="left:0;right:0;top:330px;height:262px;background:linear-gradient(180deg,rgba(15,34,56,0),var(--navy2))"></div>
 <img class="logo" src="../../logo/logo-circular.png" style="top:60px;right:60px">
-<div class="abs" style="left:80px;right:80px;top:650px"><div class="mono" style="color:var(--sun)">100% privado · puerta a puerta</div>
-<div class="ant" style="font-size:132px;margin-top:16px">Guatapé,<br><span style="color:var(--sun)">a tu manera.</span></div>
-<div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:36px;font-size:30px;font-weight:600"><span style="border:2px solid #fff5;border-radius:999px;padding:12px 24px">SUV privada</span><span style="border:2px solid #fff5;border-radius:999px;padding:12px 24px">Conductor bilingüe</span><span style="border:2px solid #fff5;border-radius:999px;padding:12px 24px">Snacks</span><span style="border:2px solid #fff5;border-radius:999px;padding:12px 24px">Seguro de viaje</span></div>
-<div class="wa" style="margin-top:44px"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c-.1-.1-.2-.2-.5-.3z"/></svg> Cotiza tu tour</div></div><div class="zocalo"><i style="background:#c8432f"></i><i style="background:#e4844a"></i><i style="background:#f2b541"></i><i style="background:#2b9a8a"></i><i style="background:#1e3a5f"></i><i style="background:#c8432f"></i><i style="background:#e4844a"></i><i style="background:#f2b541"></i><i style="background:#2b9a8a"></i></div></section>
+<div class="abs" style="left:80px;right:80px;top:600px"><div class="mono" style="color:var(--sun)">100% privado · tú eliges el horario</div>
+<div class="ant" style="font-size:124px;margin-top:18px">Guatapé,<br><span style="color:var(--sun)">a tu manera.</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;font-size:30px;font-weight:600"><span style="border:2px solid #fff5;border-radius:999px;padding:12px 24px">SUV privada</span><span style="border:2px solid #fff5;border-radius:999px;padding:12px 24px">Conductor bilingüe</span><span style="border:2px solid #fff5;border-radius:999px;padding:12px 24px">Snacks</span><span style="border:2px solid #fff5;border-radius:999px;padding:12px 24px">Seguro de viaje</span></div>
+<div class="wa" style="margin-top:40px"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c-.1-.1-.2-.2-.5-.3z"/></svg> Cotiza tu tour</div></div>
+<div class="zocalo"><i style="background:#c8432f"></i><i style="background:#e4844a"></i><i style="background:#f2b541"></i><i style="background:#2b9a8a"></i><i style="background:#1e3a5f"></i><i style="background:#c8432f"></i><i style="background:#e4844a"></i><i style="background:#f2b541"></i><i style="background:#2b9a8a"></i></div></section>
 </body></html>
