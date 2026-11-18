@@ -24,7 +24,7 @@ Rotar pilares para no repetir. Marcar con ✅ + fecha + enlace cuando se publiqu
 | 9 | Servicio | Traslado privado vs bus: comparación | Carrusel | |
 | 10 | Guía | Plan perfecto de 1 día en Guatapé | Carrusel | |
 | 11 | Confianza | Conoce a nuestros conductores | Carrusel | ⚠️ faltan fotos/nombres |
-| 12 | FAQ | Preguntas frecuentes estilo chat (24/7, inglés, maletas, privado) | Carrusel | 🗓️ borrador 2026-11-20 |
+| 12 | FAQ | Preguntas frecuentes estilo chat (24/7, inglés, maletas, privado) | Carrusel | 🗓️ aprobado 2026-11-20 |
 
 ## Ideas del dueño
 (Escribe aquí ideas, ofertas o fechas especiales — temporada alta, festivos, promociones.)
