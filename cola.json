@@ -141,7 +141,7 @@
     {
       "id": "2026-11-19-fb-traslados",
       "fecha": "2026-11-21",
-      "estado": "aprobado",
+      "estado": "publicado",
       "solo_facebook": true,
       "origen": "2026-11-08-traslados",
       "imagenes": [
@@ -159,7 +159,10 @@
         "2026-11-carrusel-traslados/fb-guataexpress-carrusel-3.jpg",
         "2026-11-carrusel-traslados/fb-guataexpress-carrusel-4.jpg",
         "2026-11-carrusel-traslados/fb-guataexpress-carrusel-5.jpg"
-      ]
+      ],
+      "facebook_id": "730069583528980_122181751208988676",
+      "enlace_facebook": "https://www.facebook.com/122180722280988676/posts/122181751208988676",
+      "publicado_en": "2026-11-21T08:54-05:00"
     },
     {
       "id": "2026-11-16-tour-privado",
